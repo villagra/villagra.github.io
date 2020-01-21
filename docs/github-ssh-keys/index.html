@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Github Ssh Keys"><meta property="og:title" content="" />
-<meta property="og:description" content="Columns Columns help organize shorter pieces of content horizontally for readability.
-{{&lt; columns &gt;}} &lt;!--begin columns block --&gt;# Left ContentLorem markdownum insigne...&lt;---&gt; &lt;!--magic sparator, between columns --&gt;# Mid ContentLorem markdownum insigne...&lt;---&gt; &lt;!--magic sparator, between columns --&gt;# Right ContentLorem markdownum insigne...{{&lt; /columns &gt;}}Example Left Content Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa protulit, sed sed aere valvis inhaesuro Pallas animam: qui quid, ignes." />
+<meta property="og:description" content="How-to configure git to use ssh keys on windows  Update git to the last version Create a key for your github account  ssh-keygen -t rsa -C &#34;your-email-address&#34;That command will print
+Generating public/private rsa key pair.Enter file in which to save the key (/c/Users/your_username/.ssh/id_rsa):Enter the full path you want to save your key in and be sure the folder exists or you&#39;ll get an error. For example:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.villagra.info/docs/github-ssh-keys/" />
 
@@ -46,49 +46,47 @@ https://github.com/alex-shpak/hugo-book
 </header>
 
       
-<article class="markdown"><h1 id="columns">Columns</h1>
-<p>Columns help organize shorter pieces of content horizontally for readability.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{&lt; <span style="color:#f92672">columns</span> &gt;}} <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> begin columns block </span><span style="color:#75715e">--&gt;</span>
-# Left Content
-Lorem markdownum insigne...
-
-&lt;<span style="color:#f92672">---</span>&gt; <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> magic sparator, between columns </span><span style="color:#75715e">--&gt;</span>
-
-# Mid Content
-Lorem markdownum insigne...
-
-&lt;<span style="color:#f92672">---</span>&gt; <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> magic sparator, between columns </span><span style="color:#75715e">--&gt;</span>
-
-# Right Content
-Lorem markdownum insigne...
-{{&lt; /<span style="color:#f92672">columns</span> &gt;}}
-</code></pre></div><h2 id="example">Example</h2>
-<div class="book-columns flex flex-wrap">
-  
-  <div class="flex-even markdown-inner">
-    <h2 id="left-content">Left Content</h2>
-<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em>quid</em>, ignes.
-Miseratus fonte Ditis conubia.
-  </div>
-  
-  <div class="flex-even markdown-inner">
-    <h2 id="mid-content">Mid Content</h2>
-<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-  </div>
-  
-  <div class="flex-even markdown-inner">
-    <h2 id="right-content">Right Content</h2>
-<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
-protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em>quid</em>, ignes.
-Miseratus fonte Ditis conubia.
-  </div>
-  
-</div>
-
+<article class="markdown"><h1 id="how-to-configure-git-to-use-ssh-keys-on-windows">How-to configure git to use ssh keys on windows</h1>
+<ul>
+<li>Update git to the last version</li>
+<li>Create a key for your github account</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -C <span style="color:#e6db74">&#34;your-email-address&#34;</span>
+</code></pre></div><p>That command will print</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Generating public/private rsa key pair.
+Enter file in which to save the key <span style="color:#f92672">(</span>/c/Users/your_username/.ssh/id_rsa<span style="color:#f92672">)</span>:
+</code></pre></div><p>Enter the <strong>full</strong> path you want to save your key in and be sure the folder exists or you'll get an error. For example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">c:/Users/villagra/.ssh/id_rsa_villagra
+</code></pre></div><p>This will generate two files: <em>id_rsa_villagra</em> and <em>id_rsa_villagra.pub</em></p>
+<ul>
+<li>Add the pub's file contents in your github account =&gt; settings =&gt; ssh and gpg keys.</li>
+<li>Navigate to the repository you want to connect via ssh ahd type</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config core.sshCommand <span style="color:#e6db74">&#34;ssh -i c:/Users/villagra/.ssh/id_rsa_villagra&#34;</span>
+git config user.name <span style="color:#e6db74">&#34;myusername&#34;</span>
+git config user.email <span style="color:#e6db74">&#34;myemail@email.com&#34;</span>
+</code></pre></div><ul>
+<li>Open the file <em>.git/config</em> of your repository and change the url for the remote &ldquo;origin&rdquo; from <strong><a href="https://github.com">https://github.com</a></strong> to  <strong><a href="mailto:git@github.com">git@github.com</a></strong></li>
+</ul>
+<p>It should looks like this one</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>core<span style="color:#f92672">]</span>
+	repositoryformatversion <span style="color:#f92672">=</span> 0
+	filemode <span style="color:#f92672">=</span> false
+	bare <span style="color:#f92672">=</span> false
+	logallrefupdates <span style="color:#f92672">=</span> true
+	symlinks <span style="color:#f92672">=</span> false
+	ignorecase <span style="color:#f92672">=</span> true
+	sshCommand <span style="color:#f92672">=</span> ssh -i c:/Users/villagra/.ssh/id_rsa_villagra
+<span style="color:#f92672">[</span>remote <span style="color:#e6db74">&#34;origin&#34;</span><span style="color:#f92672">]</span>
+	url <span style="color:#f92672">=</span> git@github.com:villagra/demo.git
+	fetch <span style="color:#f92672">=</span> +refs/heads/*:refs/remotes/origin/*
+<span style="color:#f92672">[</span>branch <span style="color:#e6db74">&#34;master&#34;</span><span style="color:#f92672">]</span>
+	remote <span style="color:#f92672">=</span> origin
+	merge <span style="color:#f92672">=</span> refs/heads/master
+<span style="color:#f92672">[</span>user<span style="color:#f92672">]</span>
+	name <span style="color:#f92672">=</span> myusername
+	email <span style="color:#f92672">=</span> myemail@email.com
+</code></pre></div><p>And done! Your repository now uses keys instead of credentials authentication.</p>
 </article>
 
       <div class="book-footer justify-between">
@@ -126,6 +124,7 @@ Miseratus fonte Ditis conubia.
 <hr>
 <ul>
 <li><a href="/docs/github-ssh-keys/"class=active>Use github ssh-keys on windows</a></li>
+<li><a href="/docs/benchmarks/">Benchmarks</a></li>
 </ul>
 
 

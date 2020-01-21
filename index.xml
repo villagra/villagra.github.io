@@ -20,12 +20,27 @@
     
     <item>
       <title></title>
+      <link>https://www.villagra.info/docs/benchmarks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.villagra.info/docs/benchmarks/</guid>
+      <description>Benchmarks Machines tested with
+W1 - I7-8700k 16GB DDR4@2400
+W2 - I7 7700T 16GB DDR4
+H1 - Ryzen 3900X 32GB DDR4@3600
+H2 - Huawei Matebook X Pro i7-8550U, 16GB LPDDR3-RAM
+Cmd commands timed with:
+@echo off@setlocalset start=%time%:: Runs your commandcmd /c %*set end=%time%set options=&amp;#34;tokens=1-4 delims=:.,&amp;#34;for /f %options% %%a in (&amp;#34;%start%&amp;#34;) do set start_h=%%a&amp;amp;set /a start_m=100%%b %% 100&amp;amp;set /a start_s=100%%c %% 100&amp;amp;set /a start_ms=100%%d %% 100for /f %options% %%a in (&amp;#34;%end%&amp;#34;) do set end_h=%%a&amp;amp;set /a end_m=100%%b %% 100&amp;amp;set /a end_s=100%%c %% 100&amp;amp;set /a end_ms=100%%d %% 100set /a hours=%end_h%-%start_h%set /a mins=%end_m%-%start_m%set /a secs=%end_s%-%start_s%set /a ms=%end_ms%-%start_ms%if %ms% lss 0 set /a secs = %secs% - 1 &amp;amp; set /a ms = 100%ms%if %secs% lss 0 set /a mins = %mins% - 1 &amp;amp; set /a secs = 60%secs%if %mins% lss 0 set /a hours = %hours% - 1 &amp;amp; set /a mins = 60%mins%if %hours% lss 0 set /a hours = 24%hours%if 1%ms% lss 100 set ms=0%ms%:: Mission accomplishedset /a totalsecs = %hours%*3600 + %mins%*60 + %secs%echo command took %hours%:%mins%:%secs%.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://www.villagra.info/docs/github-ssh-keys/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.villagra.info/docs/github-ssh-keys/</guid>
-      <description>Columns Columns help organize shorter pieces of content horizontally for readability.
-{{&amp;lt; columns &amp;gt;}} &amp;lt;!--begin columns block --&amp;gt;# Left ContentLorem markdownum insigne...&amp;lt;---&amp;gt; &amp;lt;!--magic sparator, between columns --&amp;gt;# Mid ContentLorem markdownum insigne...&amp;lt;---&amp;gt; &amp;lt;!--magic sparator, between columns --&amp;gt;# Right ContentLorem markdownum insigne...{{&amp;lt; /columns &amp;gt;}}Example Left Content Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa protulit, sed sed aere valvis inhaesuro Pallas animam: qui quid, ignes.</description>
+      <description>How-to configure git to use ssh keys on windows  Update git to the last version Create a key for your github account  ssh-keygen -t rsa -C &amp;#34;your-email-address&amp;#34;That command will print
+Generating public/private rsa key pair.Enter file in which to save the key (/c/Users/your_username/.ssh/id_rsa):Enter the full path you want to save your key in and be sure the folder exists or you&#39;ll get an error. For example:</description>
     </item>
     
   </channel>
