@@ -5,13 +5,11 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Benchmarks"><meta property="og:title" content="" />
-<meta property="og:description" content="Benchmarks Machines tested with
-W1 - I7-8700k 16GB DDR4@2400
-W2 - I7 7700T 16GB DDR4
-H1 - Ryzen 3900X 32GB DDR4@3600
-H2 - Huawei Matebook X Pro i7-8550U, 16GB LPDDR3-RAM
-Cmd commands timed with:
-@echo off@setlocalset start=%time%:: Runs your commandcmd /c %*set end=%time%set options=&#34;tokens=1-4 delims=:.,&#34;for /f %options% %%a in (&#34;%start%&#34;) do set start_h=%%a&amp;set /a start_m=100%%b %% 100&amp;set /a start_s=100%%c %% 100&amp;set /a start_ms=100%%d %% 100for /f %options% %%a in (&#34;%end%&#34;) do set end_h=%%a&amp;set /a end_m=100%%b %% 100&amp;set /a end_s=100%%c %% 100&amp;set /a end_ms=100%%d %% 100set /a hours=%end_h%-%start_h%set /a mins=%end_m%-%start_m%set /a secs=%end_s%-%start_s%set /a ms=%end_ms%-%start_ms%if %ms% lss 0 set /a secs = %secs% - 1 &amp; set /a ms = 100%ms%if %secs% lss 0 set /a mins = %mins% - 1 &amp; set /a secs = 60%secs%if %mins% lss 0 set /a hours = %hours% - 1 &amp; set /a mins = 60%mins%if %hours% lss 0 set /a hours = 24%hours%if 1%ms% lss 100 set ms=0%ms%:: Mission accomplishedset /a totalsecs = %hours%*3600 &#43; %mins%*60 &#43; %secs%echo command took %hours%:%mins%:%secs%." />
+<meta property="og:description" content="CPU Dev Benchmarks There are a lot of benchmarks out there for CPUs / GPUs, but I couldn&#39;t find any real developement scenarios comparing different machines. I just got a new ryzen PC so I decide to create this benchmarks page comparing some machines I have access to.
+It&#39;s a simple timing of the compilation times for different projects.
+Machines tested with
+3900X: Ryzen 3900X 32GB DDR4@3600
+8700K: I7-8700k 16GB DDR4@2400" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.villagra.info/docs/benchmarks/" />
 
@@ -51,12 +49,15 @@ https://github.com/alex-shpak/hugo-book
 </header>
 
       
-<article class="markdown"><h1 id="benchmarks">Benchmarks</h1>
+<article class="markdown"><h1 id="cpu-dev-benchmarks">CPU Dev Benchmarks</h1>
+<p>There are a lot of benchmarks out there for CPUs / GPUs, but I couldn't find any real developement scenarios comparing different machines. I just got a new ryzen PC so I decide to create this benchmarks page comparing some machines I have access to.</p>
+<p>It's a simple timing of the compilation times for different projects.</p>
 <p>Machines tested with</p>
-<p>W1 - I7-8700k 16GB DDR4@2400<br>
-W2 - I7 7700T 16GB DDR4<br>
-H1 - Ryzen 3900X 32GB DDR4@3600<br>
-H2 - Huawei Matebook X Pro i7-8550U, 16GB LPDDR3-RAM</p>
+<p><strong>3900X</strong>: Ryzen 3900X 32GB DDR4@3600<br>
+<strong>8700K</strong>: I7-8700k 16GB DDR4@2400<br>
+<strong>7700T</strong>: HP Envy 27 - I7-7700T 16GB DDR4@2133<br>
+<strong>8550U</strong>: Huawei Matebook X Pro - i7-8550U, 16GB LPDDR3@2133</p>
+<p>All tests have been executed 3 times and the final time is the average of those runs.</p>
 <p>Cmd commands timed with:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">@echo off
 @setlocal
@@ -85,13 +86,9 @@ set /a ms<span style="color:#f92672">=</span>%end_ms%-%start_ms%
 set /a totalsecs <span style="color:#f92672">=</span> %hours%*3600 + %mins%*60 + %secs%
 echo command took %hours%:%mins%:%secs%.%ms% <span style="color:#f92672">(</span>%totalsecs%.%ms%s total<span style="color:#f92672">)</span>
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">timecmd <span style="color:#f92672">[</span>command<span style="color:#f92672">]</span>
-</code></pre></div><h2 id="benchmark-1---ffmpeg">Benchmark 1 - FFMPEG</h2>
-<p>W1
-command took 0:21:35.98 (1295.98s total)<br>
-command took 0:20:41.34 (1241.34s total)</p>
-<p>Double compilation results:
-command took 0:28:50.33 (1730.33s total) &amp;&amp; command took 0:28:35.36 (1715.36s total)</p>
-<p><img src="/img/ffmpeg-8700k.png" alt="8700k"></p>
+</code></pre></div><h2 id="benchmark-1---ffmpeg-ffmpeg-for-winrt">Benchmark 1 - FFMPEG (FFmpeg for WinRT)</h2>
+<p>As some machines didn't reach 100% procesor usage while compiling, I've also included the parallel compilation benchmark, where I ran two build instances at the same time. The total time is the average of those two compilations.
+<img src="/img/ffmpegbench.png" alt="8700k"></p>
 </article>
 
       <div class="book-footer justify-between">

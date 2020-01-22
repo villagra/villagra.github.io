@@ -24,13 +24,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.villagra.info/docs/benchmarks/</guid>
-      <description>Benchmarks Machines tested with
-W1 - I7-8700k 16GB DDR4@2400
-W2 - I7 7700T 16GB DDR4
-H1 - Ryzen 3900X 32GB DDR4@3600
-H2 - Huawei Matebook X Pro i7-8550U, 16GB LPDDR3-RAM
-Cmd commands timed with:
-@echo off@setlocalset start=%time%:: Runs your commandcmd /c %*set end=%time%set options=&amp;#34;tokens=1-4 delims=:.,&amp;#34;for /f %options% %%a in (&amp;#34;%start%&amp;#34;) do set start_h=%%a&amp;amp;set /a start_m=100%%b %% 100&amp;amp;set /a start_s=100%%c %% 100&amp;amp;set /a start_ms=100%%d %% 100for /f %options% %%a in (&amp;#34;%end%&amp;#34;) do set end_h=%%a&amp;amp;set /a end_m=100%%b %% 100&amp;amp;set /a end_s=100%%c %% 100&amp;amp;set /a end_ms=100%%d %% 100set /a hours=%end_h%-%start_h%set /a mins=%end_m%-%start_m%set /a secs=%end_s%-%start_s%set /a ms=%end_ms%-%start_ms%if %ms% lss 0 set /a secs = %secs% - 1 &amp;amp; set /a ms = 100%ms%if %secs% lss 0 set /a mins = %mins% - 1 &amp;amp; set /a secs = 60%secs%if %mins% lss 0 set /a hours = %hours% - 1 &amp;amp; set /a mins = 60%mins%if %hours% lss 0 set /a hours = 24%hours%if 1%ms% lss 100 set ms=0%ms%:: Mission accomplishedset /a totalsecs = %hours%*3600 + %mins%*60 + %secs%echo command took %hours%:%mins%:%secs%.</description>
+      <description>CPU Dev Benchmarks There are a lot of benchmarks out there for CPUs / GPUs, but I couldn&#39;t find any real developement scenarios comparing different machines. I just got a new ryzen PC so I decide to create this benchmarks page comparing some machines I have access to.
+It&#39;s a simple timing of the compilation times for different projects.
+Machines tested with
+3900X: Ryzen 3900X 32GB DDR4@3600
+8700K: I7-8700k 16GB DDR4@2400</description>
     </item>
     
     <item>
