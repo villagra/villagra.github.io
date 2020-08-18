@@ -7,14 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jose Villagra</copyright>
+    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://villagra.info/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
+      <title>Unraid documentation</title>
+      <link>https://villagra.info/docs/unraid/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://villagra.info/docs/unraid/</guid>
+      <description>Setup vpn/wireguard on Unraid https://unraid.net/blog/wireguard-on-unraid</description>
+    </item>
+    
+    <item>
+      <title>CPU Dev Benchmarks</title>
       <link>https://villagra.info/docs/benchmarks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://villagra.info/docs/benchmarks/</guid>
       <description>CPU Dev Benchmarks There are a lot of benchmarks out there for CPUs / GPUs, but I couldn&amp;rsquo;t find any real developement scenarios comparing different machines. I just got a new ryzen PC so I decide to create this benchmarks page comparing some machines I have access to.
@@ -25,22 +35,13 @@ Machines tested with
     </item>
     
     <item>
-      <title></title>
+      <title>How-to configure git to use ssh keys on windows</title>
       <link>https://villagra.info/docs/github-ssh-keys/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://villagra.info/docs/github-ssh-keys/</guid>
       <description>How-to configure git to use ssh keys on windows  Update git to the last version Create a key for your github account  ssh-keygen -t rsa -C &amp;#34;your-email-address&amp;#34; That command will print
 Generating public/private rsa key pair. Enter file in which to save the key (/c/Users/your_username/.ssh/id_rsa): Enter the full path you want to save your key in and be sure the folder exists or you&amp;rsquo;ll get an error. For example:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://villagra.info/docs/unraid/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://villagra.info/docs/unraid/</guid>
-      <description>Setup vpn/wireguard https://unraid.net/blog/wireguard-on-unraid</description>
     </item>
     
   </channel>
