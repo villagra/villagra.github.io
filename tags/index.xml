@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jose Villagra</title>
-    <link>/tags/</link>
+    <link>https://villagra.github.io/tags/</link>
     <description>Recent content in Tags on Jose Villagra</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jose Villagra</copyright>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://villagra.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
