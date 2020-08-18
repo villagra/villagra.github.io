@@ -9,7 +9,8 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:title" content="Submodules in git" />
-<meta property="og:description" content="Add a submodule git submodule add https://github.com/repo/repo.git path/to/moduleRemove a submodule git submodule deinit path/to/module -fgit rm path/to/module -rgit commit -m &quot;Remove submodule&quot;git push" />
+<meta property="og:description" content="Clone a repo with submodules git clone --recursive https://github.com/repo/repo.gitor if you forgot the &ndash;recursive
+git clone https://github.com/repo/repo.gitgit submodule update --remote --recursiveAdd a submodule git submodule add https://github.com/repo/repo.git path/to/moduleRemove a submodule git submodule deinit path/to/module -fgit rm path/to/module -rgit commit -m &quot;Remove submodule&quot;git push" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://villagra.github.io/docs/git-submodules/" />
 <meta property="article:published_time" content="2020-08-18T00:00:00+00:00" />
@@ -17,7 +18,8 @@
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Submodules in git"/>
-<meta name="twitter:description" content="Add a submodule git submodule add https://github.com/repo/repo.git path/to/moduleRemove a submodule git submodule deinit path/to/module -fgit rm path/to/module -rgit commit -m &quot;Remove submodule&quot;git push"/>
+<meta name="twitter:description" content="Clone a repo with submodules git clone --recursive https://github.com/repo/repo.gitor if you forgot the &ndash;recursive
+git clone https://github.com/repo/repo.gitgit submodule update --remote --recursiveAdd a submodule git submodule add https://github.com/repo/repo.git path/to/moduleRemove a submodule git submodule deinit path/to/module -fgit rm path/to/module -rgit commit -m &quot;Remove submodule&quot;git push"/>
 
   
   
@@ -69,7 +71,12 @@
 
   <div class="content" itemprop="articleBody">
   
-    <h2 id="add-a-submodule">Add a submodule</h2>
+    <h2 id="clone-a-repo-with-submodules">Clone a repo with submodules</h2>
+<pre><code>git clone --recursive https://github.com/repo/repo.git
+</code></pre><p>or if you forgot the &ndash;recursive</p>
+<pre><code>git clone https://github.com/repo/repo.git
+git submodule update --remote --recursive
+</code></pre><h2 id="add-a-submodule">Add a submodule</h2>
 <pre><code>git submodule add https://github.com/repo/repo.git path/to/module
 </code></pre><h2 id="remove-a-submodule">Remove a submodule</h2>
 <pre><code>git submodule deinit path/to/module -f

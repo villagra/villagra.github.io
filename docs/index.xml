@@ -18,7 +18,8 @@
       <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://villagra.github.io/docs/git-submodules/</guid>
-      <description>Add a submodule git submodule add https://github.com/repo/repo.git path/to/moduleRemove a submodule git submodule deinit path/to/module -fgit rm path/to/module -rgit commit -m &amp;quot;Remove submodule&amp;quot;git push</description>
+      <description>Clone a repo with submodules git clone --recursive https://github.com/repo/repo.gitor if you forgot the &amp;ndash;recursive
+git clone https://github.com/repo/repo.gitgit submodule update --remote --recursiveAdd a submodule git submodule add https://github.com/repo/repo.git path/to/moduleRemove a submodule git submodule deinit path/to/module -fgit rm path/to/module -rgit commit -m &amp;quot;Remove submodule&amp;quot;git push</description>
     </item>
     
     <item>
