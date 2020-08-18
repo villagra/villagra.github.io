@@ -44,5 +44,15 @@ Machines tested with
 Generating public/private rsa key pair. Enter file in which to save the key (/c/Users/your_username/.ssh/id_rsa): Enter the full path you want to save your key in and be sure the folder exists or you&amp;rsquo;ll get an error. For example:</description>
     </item>
     
+    <item>
+      <title>About</title>
+      <link>https://villagra.github.io/about/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://villagra.github.io/about/</guid>
+      <description>About me page Hi, I&amp;rsquo;m Jose Villagra. Software Engineer currently working @Zattoo
+Contant Send me an email to villagra@gmail.com</description>
+    </item>
+    
   </channel>
 </rss>
