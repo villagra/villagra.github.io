@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jose Villagra</copyright>
-    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://villagra.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Submodules in git</title>
+      <link>https://villagra.github.io/docs/git-submodules/</link>
+      <pubDate>Tue, 18 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://villagra.github.io/docs/git-submodules/</guid>
+      <description>Add a submodule git submodule add https://github.com/repo/repo.git path/to/moduleRemove a submodule git submodule deinit path/to/module -fgit rm path/to/module -rgit commit -m &amp;quot;Remove submodule&amp;quot;git push</description>
+    </item>
     
     <item>
       <title>Unraid documentation</title>
