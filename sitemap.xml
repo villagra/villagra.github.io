@@ -3,40 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.villagra.info/posts/</loc>
-    <lastmod>2020-01-20T12:03:13+01:00</lastmod>
+    <loc>https://villagra.info/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.villagra.info/posts/welcome/</loc>
-    <lastmod>2020-01-20T12:03:13+01:00</lastmod>
+    <loc>https://villagra.info/posts/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.villagra.info/docs/benchmarks/</loc>
-    <priority>0</priority>
+    <loc>https://villagra.info/posts/welcome/</loc>
+    <lastmod>2020-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.villagra.info/docs/github-ssh-keys/</loc>
-    <priority>0</priority>
+    <loc>https://villagra.info/docs/benchmarks/</loc>
   </url>
   
   <url>
-    <loc>http://www.villagra.info/categories/</loc>
+    <loc>https://villagra.info/docs/github-ssh-keys/</loc>
   </url>
   
   <url>
-    <loc>http://www.villagra.info/docs/</loc>
+    <loc>https://villagra.info/docs/unraid/</loc>
   </url>
   
   <url>
-    <loc>http://www.villagra.info/</loc>
-    <lastmod>2020-01-21T10:26:17+01:00</lastmod>
+    <loc>https://villagra.info/categories/</loc>
   </url>
   
   <url>
-    <loc>http://www.villagra.info/tags/</loc>
+    <loc>https://villagra.info/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://villagra.info/tags/</loc>
   </url>
   
 </urlset>

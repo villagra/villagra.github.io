@@ -1,52 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Github Ssh Keys"><meta property="og:title" content="" />
-<meta property="og:description" content="How-to configure git to use ssh keys on windows  Update git to the last version Create a key for your github account  ssh-keygen -t rsa -C &#34;your-email-address&#34;That command will print
-Generating public/private rsa key pair.Enter file in which to save the key (/c/Users/your_username/.ssh/id_rsa):Enter the full path you want to save your key in and be sure the folder exists or you&#39;ll get an error. For example:" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>  </title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="" />
+<meta property="og:description" content="How-to configure git to use ssh keys on windows  Update git to the last version Create a key for your github account  ssh-keygen -t rsa -C &#34;your-email-address&#34; That command will print
+Generating public/private rsa key pair. Enter file in which to save the key (/c/Users/your_username/.ssh/id_rsa): Enter the full path you want to save your key in and be sure the folder exists or you&rsquo;ll get an error. For example:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.villagra.info/docs/github-ssh-keys/" />
-
-<title>Github Ssh Keys | Jose M. Villagra</title>
-<link rel="icon" href="/favicon.png" type="image/x-icon">
+<meta property="og:url" content="https://villagra.info/docs/github-ssh-keys/" />
 
 
-<link rel="stylesheet" href="/book.min.4a1abef25343ed2f74a825cfcf36120337aad526ff677e1335d683320da4f268.css" integrity="sha256-Shq&#43;8lND7S90qCXPzzYSAzeq1Sb/Z34TNdaDMg2k8mg=">
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="How-to configure git to use ssh keys on windows  Update git to the last version Create a key for your github account  ssh-keygen -t rsa -C &#34;your-email-address&#34; That command will print
+Generating public/private rsa key pair. Enter file in which to save the key (/c/Users/your_username/.ssh/id_rsa): Enter the full path you want to save your key in and be sure the folder exists or you&rsquo;ll get an error. For example:"/>
 
+  
+  
+  
+  <link rel="stylesheet" href="https://villagra.info/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
 
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
+  
+<link rel="icon" type="image/png" href="https://villagra.info/images/favicon.ico" />
 
   
 </head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
 
-<body>
-  <input type="checkbox" class="hidden" id="toc-control" />
-  <input type="checkbox" class="hidden" id="menu-control" />
-  <main class="container">
-    
+    <header id="header">
+  <a href="https://villagra.info">
+  
+    <div id="logo" style="background-image: url(https://villagra.info/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Jose Villagra</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+    </ul>
+  </div>
+</header>
   
 
+    
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-
-
-    <div class="book-page">
-      <header class="flex align-center justify-between book-header">
-  <label id="menu-control" for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-  <label id="toc-control" for="toc-control">
-  <strong>Github Ssh Keys</strong>
-  </label>
-</header>
-
-      
-<article class="markdown"><h1 id="how-to-configure-git-to-use-ssh-keys-on-windows">How-to configure git to use ssh keys on windows</h1>
+  <div class="content" itemprop="articleBody">
+  
+    <h1 id="how-to-configure-git-to-use-ssh-keys-on-windows">How-to configure git to use ssh keys on windows</h1>
 <ul>
 <li>Update git to the last version</li>
 <li>Create a key for your github account</li>
@@ -55,11 +73,11 @@ https://github.com/alex-shpak/hugo-book
 </code></pre></div><p>That command will print</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Generating public/private rsa key pair.
 Enter file in which to save the key <span style="color:#f92672">(</span>/c/Users/your_username/.ssh/id_rsa<span style="color:#f92672">)</span>:
-</code></pre></div><p>Enter the <strong>full</strong> path you want to save your key in and be sure the folder exists or you'll get an error. For example:</p>
+</code></pre></div><p>Enter the <strong>full</strong> path you want to save your key in and be sure the folder exists or you&rsquo;ll get an error. For example:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">c:/Users/villagra/.ssh/id_rsa_villagra
 </code></pre></div><p>This will generate two files: <em>id_rsa_villagra</em> and <em>id_rsa_villagra.pub</em></p>
 <ul>
-<li>Add the pub's file contents in your github account =&gt; settings =&gt; ssh and gpg keys.</li>
+<li>Add the pub&rsquo;s file contents in your github account =&gt; settings =&gt; ssh and gpg keys.</li>
 <li>Navigate to the repository you want to connect via ssh ahd type</li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config core.sshCommand <span style="color:#e6db74">&#34;ssh -i c:/Users/villagra/.ssh/id_rsa_villagra&#34;</span>
@@ -70,7 +88,7 @@ git config user.email <span style="color:#e6db74">&#34;myemail@email.com&#34;</s
 </ul>
 <p>It should looks like this one</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>core<span style="color:#f92672">]</span>
-	repositoryformatversion <span style="color:#f92672">=</span> 0
+	repositoryformatversion <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 	filemode <span style="color:#f92672">=</span> false
 	bare <span style="color:#f92672">=</span> false
 	logallrefupdates <span style="color:#f92672">=</span> true
@@ -87,67 +105,31 @@ git config user.email <span style="color:#e6db74">&#34;myemail@email.com&#34;</s
 	name <span style="color:#f92672">=</span> myusername
 	email <span style="color:#f92672">=</span> myemail@email.com
 </code></pre></div><p>And done! Your repository now uses keys instead of credentials authentication.</p>
+
+  
+  </div>
 </article>
 
-      <div class="book-footer justify-between">
-  
 
-  
-
-  
-
-</div>
-
-
-
-      
-    </div>
-
-    <aside class="book-menu fixed">
-      <nav id="BookMenu">
-<h2 class="book-brand">
-  <a href="http://www.villagra.info"><span>Jose M. Villagra</span>
-  </a>
-</h2>
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Jose Villagra 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
 
 
-
-
-
-
-    <ul>
-<li><a href="/posts/">Blog</a></li>
-<li>
-<h2 id="docs">Docs</h2>
-</li>
-</ul>
-<hr>
-<ul>
-<li><a href="/docs/github-ssh-keys/"class=active>Use github ssh-keys on windows</a></li>
-<li><a href="/docs/benchmarks/">Benchmarks</a></li>
-</ul>
-
-
-
-
-
-</nav>
-
-
-<script>
-(function() {
-  var menu = document.querySelector("aside.book-menu nav");
-  addEventListener("beforeunload", function(event) {
-    localStorage.setItem("menu.scrollTop", menu.scrollTop);
-  });
-  menu.scrollTop = localStorage.getItem("menu.scrollTop");
-})();
-</script>
-
-    </aside>
-  </main>
-
+  </div>
   
 </body>
 
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
 </html>

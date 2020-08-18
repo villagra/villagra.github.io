@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Jose M. Villagra</title>
-    <link>http://www.villagra.info/posts/</link>
-    <description>Recent content in Posts on Jose M. Villagra</description>
+    <title>Posts on Jose Villagra</title>
+    <link>https://villagra.info/posts/</link>
+    <description>Recent content in Posts on Jose Villagra</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Jose Villagra</copyright>
     <lastBuildDate>Mon, 20 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.villagra.info/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://villagra.info/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Welcome</title>
-      <link>http://www.villagra.info/posts/welcome/</link>
+      <link>https://villagra.info/posts/welcome/</link>
       <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://www.villagra.info/posts/welcome/</guid>
-      <description>Nothing here yet, I&#39;m planing to move all my content here but it&#39;s not ready yet.</description>
+      <guid>https://villagra.info/posts/welcome/</guid>
+      <description>Nothing here yet, I&amp;rsquo;m planing to move all my content here but it&amp;rsquo;s not ready yet.</description>
     </item>
     
   </channel>

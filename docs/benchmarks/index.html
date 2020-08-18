@@ -1,57 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Benchmarks"><meta property="og:title" content="" />
-<meta property="og:description" content="CPU Dev Benchmarks There are a lot of benchmarks out there for CPUs / GPUs, but I couldn&#39;t find any real developement scenarios comparing different machines. I just got a new ryzen PC so I decide to create this benchmarks page comparing some machines I have access to.
-It&#39;s a simple timing of the compilation times for different projects.
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>  </title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="" />
+<meta property="og:description" content="CPU Dev Benchmarks There are a lot of benchmarks out there for CPUs / GPUs, but I couldn&rsquo;t find any real developement scenarios comparing different machines. I just got a new ryzen PC so I decide to create this benchmarks page comparing some machines I have access to.
+It&rsquo;s a simple timing of the compilation times for different projects.
 Machines tested with
 3900X: Ryzen 3900X 32GB DDR4@3600
 8700K: I7-8700k 16GB DDR4@2400" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.villagra.info/docs/benchmarks/" />
-
-<title>Benchmarks | Jose M. Villagra</title>
-<link rel="icon" href="/favicon.png" type="image/x-icon">
+<meta property="og:url" content="https://villagra.info/docs/benchmarks/" />
 
 
-<link rel="stylesheet" href="/book.min.4a1abef25343ed2f74a825cfcf36120337aad526ff677e1335d683320da4f268.css" integrity="sha256-Shq&#43;8lND7S90qCXPzzYSAzeq1Sb/Z34TNdaDMg2k8mg=">
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="CPU Dev Benchmarks There are a lot of benchmarks out there for CPUs / GPUs, but I couldn&rsquo;t find any real developement scenarios comparing different machines. I just got a new ryzen PC so I decide to create this benchmarks page comparing some machines I have access to.
+It&rsquo;s a simple timing of the compilation times for different projects.
+Machines tested with
+3900X: Ryzen 3900X 32GB DDR4@3600
+8700K: I7-8700k 16GB DDR4@2400"/>
 
+  
+  
+  
+  <link rel="stylesheet" href="https://villagra.info/css/style-white.css">
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
 
-<!--
-Made with Book Theme
-https://github.com/alex-shpak/hugo-book
--->
+  
+<link rel="icon" type="image/png" href="https://villagra.info/images/favicon.ico" />
 
   
 </head>
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
 
-<body>
-  <input type="checkbox" class="hidden" id="toc-control" />
-  <input type="checkbox" class="hidden" id="menu-control" />
-  <main class="container">
-    
+    <header id="header">
+  <a href="https://villagra.info">
+  
+    <div id="logo" style="background-image: url(https://villagra.info/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Jose Villagra</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+    </ul>
+  </div>
+</header>
   
 
+    
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-
-
-    <div class="book-page">
-      <header class="flex align-center justify-between book-header">
-  <label id="menu-control" for="menu-control">
-    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
-  </label>
-  <label id="toc-control" for="toc-control">
-  <strong>Benchmarks</strong>
-  </label>
-</header>
-
-      
-<article class="markdown"><h1 id="cpu-dev-benchmarks">CPU Dev Benchmarks</h1>
-<p>There are a lot of benchmarks out there for CPUs / GPUs, but I couldn't find any real developement scenarios comparing different machines. I just got a new ryzen PC so I decide to create this benchmarks page comparing some machines I have access to.</p>
-<p>It's a simple timing of the compilation times for different projects.</p>
+  <div class="content" itemprop="articleBody">
+  
+    <h1 id="cpu-dev-benchmarks">CPU Dev Benchmarks</h1>
+<p>There are a lot of benchmarks out there for CPUs / GPUs, but I couldn&rsquo;t find any real developement scenarios comparing different machines. I just got a new ryzen PC so I decide to create this benchmarks page comparing some machines I have access to.</p>
+<p>It&rsquo;s a simple timing of the compilation times for different projects.</p>
 <p>Machines tested with</p>
 <p><strong>3900X</strong>: Ryzen 3900X 32GB DDR4@3600<br>
 <strong>8700K</strong>: I7-8700k 16GB DDR4@2400<br>
@@ -69,8 +90,8 @@ cmd /c %*
 
 set end<span style="color:#f92672">=</span>%time%
 set options<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tokens=1-4 delims=:.,&#34;</span>
-<span style="color:#66d9ef">for</span> /f %options% %%a in <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%start%&#34;</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">do</span> set start_h<span style="color:#f92672">=</span>%%a&amp;set /a start_m<span style="color:#f92672">=</span>100%%b %% 100&amp;set /a start_s<span style="color:#f92672">=</span>100%%c %% 100&amp;set /a start_ms<span style="color:#f92672">=</span>100%%d %% 100
-<span style="color:#66d9ef">for</span> /f %options% %%a in <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%end%&#34;</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">do</span> set end_h<span style="color:#f92672">=</span>%%a&amp;set /a end_m<span style="color:#f92672">=</span>100%%b %% 100&amp;set /a end_s<span style="color:#f92672">=</span>100%%c %% 100&amp;set /a end_ms<span style="color:#f92672">=</span>100%%d %% 100
+<span style="color:#66d9ef">for</span> /f %options% %%a in <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%start%&#34;</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">do</span> set start_h<span style="color:#f92672">=</span>%%a&amp;set /a start_m<span style="color:#f92672">=</span>100%%b %% 100&amp;set /a start_s<span style="color:#f92672">=</span>100%%c %% 100&amp;set /a start_ms<span style="color:#f92672">=</span>100%%d %% <span style="color:#ae81ff">100</span>
+<span style="color:#66d9ef">for</span> /f %options% %%a in <span style="color:#f92672">(</span><span style="color:#e6db74">&#34;%end%&#34;</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">do</span> set end_h<span style="color:#f92672">=</span>%%a&amp;set /a end_m<span style="color:#f92672">=</span>100%%b %% 100&amp;set /a end_s<span style="color:#f92672">=</span>100%%c %% 100&amp;set /a end_ms<span style="color:#f92672">=</span>100%%d %% <span style="color:#ae81ff">100</span>
 
 set /a hours<span style="color:#f92672">=</span>%end_h%-%start_h%
 set /a mins<span style="color:#f92672">=</span>%end_m%-%start_m%
@@ -87,69 +108,35 @@ set /a totalsecs <span style="color:#f92672">=</span> %hours%*3600 + %mins%*60 +
 echo command took %hours%:%mins%:%secs%.%ms% <span style="color:#f92672">(</span>%totalsecs%.%ms%s total<span style="color:#f92672">)</span>
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">timecmd <span style="color:#f92672">[</span>command<span style="color:#f92672">]</span>
 </code></pre></div><h2 id="benchmark-1---ffmpeg-ffmpeg-for-winrt">Benchmark 1 - FFMPEG (FFmpeg for WinRT)</h2>
-<p>As some machines didn't reach 100% procesor usage while compiling, I've also included the parallel compilation benchmark, where I ran two build instances at the same time. The total time is the average of those two compilations.
-<img src="/img/ffmpegbench.png" alt="8700k"></p>
+<p>As some machines didn&rsquo;t reach 100% procesor usage while compiling, I&rsquo;ve also included the parallel compilation benchmark, where I ran two build instances at the same time. The total time is the average of those two compilations.
+<img src="/img/ffmpegbench.png" alt="FFMPEG"></p>
+<h2 id="benchmark-2---uwp-app-release-mode-net-native-toolchain-x86x64arm">Benchmark 2 - UWP app (Release mode .net native toolchain x86|x64|arm)</h2>
+<p><img src="/img/uwp.png" alt="FFMPEG"></p>
+
+  
+  </div>
 </article>
 
-      <div class="book-footer justify-between">
-  
 
-  
-
-  
-
-</div>
-
-
-
-      
-    </div>
-
-    <aside class="book-menu fixed">
-      <nav id="BookMenu">
-<h2 class="book-brand">
-  <a href="http://www.villagra.info"><span>Jose M. Villagra</span>
-  </a>
-</h2>
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Jose Villagra 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
 
 
-
-
-
-
-    <ul>
-<li><a href="/posts/">Blog</a></li>
-<li>
-<h2 id="docs">Docs</h2>
-</li>
-</ul>
-<hr>
-<ul>
-<li><a href="/docs/github-ssh-keys/">Use github ssh-keys on windows</a></li>
-<li><a href="/docs/benchmarks/"class=active>Benchmarks</a></li>
-</ul>
-
-
-
-
-
-</nav>
-
-
-<script>
-(function() {
-  var menu = document.querySelector("aside.book-menu nav");
-  addEventListener("beforeunload", function(event) {
-    localStorage.setItem("menu.scrollTop", menu.scrollTop);
-  });
-  menu.scrollTop = localStorage.getItem("menu.scrollTop");
-})();
-</script>
-
-    </aside>
-  </main>
-
+  </div>
   
 </body>
 
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/js/main.js"></script>
 </html>
